@@ -40,6 +40,5 @@ int main()
     MyResult = (MyValue++);
     //MyResult = (++MyValue);
 
-    int a = 0;
 }
 

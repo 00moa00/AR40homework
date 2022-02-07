@@ -14,31 +14,57 @@ public:
     {
     }
 
-    //a++
-    MyInt& operator++() {
 
-        this->Value = this->Value + 1;
-        return *this ;
-    }
+    //MyInt& operator+=(const MyInt& _i) {
 
-    //++a
-    MyInt& operator++ (int) {
+    //Value += _i.Value;
+    //return *this;
+    //}
 
-        MyInt temp = this->Value;
-        this->Value =  this->Value + 1;
+    MyInt operator+=(const MyInt& _i) {
 
-        return temp;
-    }
+        Value += _i.Value;
+        std::cout << &(_i.Value) << std::endl;
+        std::cout << &(Value) << std::endl;
+
+        return Value;
+
+    }                   
+
 };
 
 int main()
 {
 
-    MyInt MyValue = 10;
     MyInt MyResult = 0;
 
-    MyResult = (MyValue++);
-    //MyResult = (++MyValue);
+    
+    //  MyResult =  MyResult + MyInt(2);
+    //  (MyResult += MyInt(1)) += (MyInt(1));
 
+
+    MyResult += MyInt(1);
+  // (MyResult += MyInt(1)) += (MyInt(1));
+   // MyResult.operator+=(MyInt(1));
+    std::cout << &(MyResult.Value) << std::endl;
+
+    std::cout << MyResult.Value << std::endl;
 }
 
+
+////++a
+//MyInt& operator++() {
+//
+//    this->Value = this->Value + 10;
+//    return *this;
+
+
+
+//a++
+//MyInt& operator++ (int) {
+
+//    MyInt temp = this->Value;
+//    this->Value =  this->Value + 10;
+
+//    return temp;
+//}

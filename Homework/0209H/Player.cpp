@@ -16,7 +16,6 @@ Player::Player(ConsoleScreen* _Screen, const char* _Text)
 		Text_[i] = _Text[i];
 	}
 
-	// Pos_ = ;
 }
 
 Player::~Player() 
@@ -26,8 +25,7 @@ Player::~Player()
 
 void Player::Update() 
 {
-	// Pos_.x_ += 1; // Pos_.y_ += 0;
-	//   'a'
+
 	int Value = _getch();
 
 	switch (Value)

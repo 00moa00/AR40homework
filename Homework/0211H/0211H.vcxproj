@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{958b682c-8d66-4e32-903c-b9f8a3014efb}</ProjectGuid>
-    <RootNamespace>ConsoleScreen</RootNamespace>
+    <ProjectGuid>{1f56bbd5-a7ce-42a5-835d-5bf088101dba}</ProjectGuid>
+    <RootNamespace>My0211H</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,41 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleMath.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
+    <ClCompile Include="ConsoleGlobalInst.cpp" />
+    <ClCompile Include="ConsoleMath.cpp" />
+    <ClCompile Include="ConsoleObject.cpp" />
     <ClCompile Include="ConsoleScreen.cpp" />
-    <ClCompile Include="Monster.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
-    <ClCompile Include="TextScreen.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="TextScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ConsoleMath.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Monster.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="TextScreen.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
+    <ClInclude Include="ConsoleGlobalInst.h" />
+    <ClInclude Include="ConsoleMath.h" />
+    <ClInclude Include="ConsoleObject.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="TextScreen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

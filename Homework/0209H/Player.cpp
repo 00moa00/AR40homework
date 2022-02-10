@@ -1,5 +1,4 @@
 #include "Player.h"
-#include <conio.h>
 
 Player::Player(ConsoleScreen* _Screen, const char* _Text)
 	: Screen_(_Screen)

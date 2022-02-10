@@ -23,5 +23,8 @@ int main()
         NewPlayer.Render();
         NewScreen.PrintScreen();
         NewPlayer.Update();
+
+        int Value = _getch();
+        if (Value == 27) break;
     }
 }

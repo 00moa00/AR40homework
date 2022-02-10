@@ -1,6 +1,7 @@
 #pragma once
 #include "ConsoleMath.h"
 #include <assert.h>
+#include <conio.h>
 
 class ConsoleScreen
 {

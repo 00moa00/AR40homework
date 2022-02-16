@@ -70,11 +70,13 @@ public:
     void ReSize(unsigned int _Size)
     {
         unsigned int beforeSize = Size_;
-        DataType* CopyArray = new DataType[Size_];
+        DataType* CopyArry = new DataType[Size_];
+        //GameArray CopyArry = GameArray(); 
+        //CopyArry.ArrData = new DataType[Size_];
 
         for (int i = 0; i < Size_; i++)
         {
-            CopyArray[i] = ArrData_[i];
+            CopyArry[i] = ArrData_[i];
         }
 
         Release();
@@ -87,7 +89,7 @@ public:
         {
             for (size_t i = 0; i < beforeSize; i++)
             {
-                ArrData_[i] = CopyArray[i];
+                ArrData_[i] = CopyArry[i];
             }
         }
 
@@ -95,13 +97,14 @@ public:
         {
             for (size_t i = 0; i < Size_; i++)
             {
-                ArrData_[i] = CopyArray[i];
+                ArrData_[i] = CopyArry[i];
             }
         }
 
-        if (CopyArray != nullptr) {
-            delete[] CopyArray;
-            CopyArray = nullptr;
+        //CopyArry.release();
+        if (CopyArry != nullptr) {
+            delete[] CopyArry;
+            CopyArry = nullptr;
         }
     }
 

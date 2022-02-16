@@ -67,9 +67,9 @@ public:
         }
     }
 
-    void ReSize(unsigned int _Size)
+    void ReSize(int _Size)
     {
-        unsigned int beforeSize = Size_;
+        int beforeSize = Size_;
         DataType* CopyArry = new DataType[Size_];
         //GameArray CopyArry = GameArray(); 
         //CopyArry.ArrData = new DataType[Size_];

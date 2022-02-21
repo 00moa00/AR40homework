@@ -51,17 +51,21 @@ int main()
 		}
 	}
 
-	if (nullptr != NewBody)
-	{
-		delete NewBody;
-		NewBody = nullptr;
-	}
+	NewHead->Release();
+	NewBody->Release();
 
-	if (nullptr != NewHead)
-	{
-		delete NewHead;
-		NewHead = nullptr;
-	}
+	//if (nullptr != NewBody)
+	//{
+	//	delete NewBody;
+	//	NewBody = nullptr;
+	//}
+
+	//if (nullptr != NewHead)
+	//{
+	//	delete NewHead;
+	//	NewHead = nullptr;
+	//}
 
 	ConsoleScreen::Destroy();
 }
+

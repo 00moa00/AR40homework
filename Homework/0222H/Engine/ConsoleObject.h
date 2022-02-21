@@ -41,6 +41,7 @@ public:
 
 	virtual void Update();
 	virtual void Render();
+	virtual void Release();
 	virtual void OverLap(ConsoleObject* _Other);
 	bool OverLapCheck(const ConsoleObject* _Other);
 

@@ -34,6 +34,14 @@ void ConsoleObject::Render()
 	ConsoleScreen::GetInst().SetPixel(Pos_, Text_);
 }
 
+void ConsoleObject::Release()
+{
+	if (this != nullptr) {
+		delete this;
+
+	}
+}
+
 
 void ConsoleObject::InScreenMovement(const ConsoleVector& _Vector)
 {

@@ -9,13 +9,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEngineBase", "GameEngin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Level0", "Level0", "{DF861BC4-FA6F-4215-8F9E-62C60B21A51F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DOC", "DOC", "{07E5C807-2BB2-4BF5-AE59-2F1A26F86A27}"
-	ProjectSection(SolutionItems) = preProject
-		Error.txt = Error.txt
-		선생님의 API프로젝트 의도.txt = 선생님의 API프로젝트 의도.txt
-		선생님이 코드 보는법.txt = 선생님이 코드 보는법.txt
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Level1", "Level1", "{94015F78-E75D-4BFC-A027-6B4CF40B9123}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Level3", "Level3", "{FBDE19B6-78DE-4489-A9FE-EF33A1D9E144}"
